@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digressões Filosóficas - Site de Filosofia">
+    <meta name="author" content="Gustavo Monteiro Laperriere">
+    <title>Digressões Filosóficas</title>
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <style>
+
+    :root {
+        --cor00: rgb(215, 206, 219);
+        --cor0: rgb(243, 234, 248);
+        --cor1: rgba(45, 151, 119, 0.678);
+        --cor2: rgb(57, 92, 109);
+        --cor3: rgb(39, 66, 80);
+        --cor4: rgba(141, 70, 37, 0.685);
+        --cor5: rgba(136, 96, 22, 0.63);
+        --cor6: rgba(94, 67, 17, 0.63);
+        --cor7: rgba(43, 68, 13, 0.671);
+        --cor8: rgb(27, 26, 26);
+    }
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        background-color: var(--cor8);
+        height: 5.5vh;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.575);
+    }
+
+    body {
+        background-color:rgb(44, 44, 44);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.25em;
+    }
+
+    footer > h2 {
+        text-align: center;
+        font-size: small;
+        background-color: var(--cor8);
+        height: clamp(2px, 2px + 1.8vh, 16px);
+        padding: 5px 0px 11px 0px;
+        margin: 6px 0px 6px 0px;
+        color: var(--cor00);
+        font-family: Helvetica;
+        font-weight: lighter;
+        font-variant: small-caps;
+
+    }
+    img#icon-insta {
+        height: 4.5vh;
+        border-radius: 50%;
+        margin-top: 0.5vh;
+        display: inline-block;
+    }
+    h3#head {
+        font-family: 'Times New Roman', Times, serif;
+        display: inline-block;
+        background-color: var(--cor8);
+        font-size: 3.8vh;
+        margin-top: 2px;
+        color: var(--cor00);
+        font-variant: small-caps;
+        letter-spacing: 2px;
+    }
+
+    main {
+        background-image: url({% static 'img/stary-nite.jpg' %});
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 84.5vh;
+    }
+    #block {
+        max-width: 800px;
+    }
+    #texto1 {
+        background-color: rgba(27, 26, 26, 0.88);
+        font-size: 3vh;
+        font-weight: bold;
+        color: var(--cor00);
+        margin: 8vh 0px 0px 8vw;
+        font-family: Helvetica;
+        font-weight: lighter;
+        display: inline-block;
+        padding: 0px 5px;
+        font-variant: small-caps;
+    }
+    .sem-linha {
+        text-decoration: none;
+    }
+    #novo {
+        height: 9vh;
+        padding-top: 1vh;
+        margin-bottom: 14px;
+        text-align: center;
+        font-family: Helvetica;
+        font-weight: lighter;
+        font-size: 4vh;
+        background-color: var(--cor8);
+        color: var(--cor00);
+        font-variant: small-caps;
+    }
+    #novo > img {
+        display: block;
+        height: 4vh;
+        margin: auto;
+    }
+    #nietzsche {
+
+        display: inline-block;
+        margin-top: 7vh;
+        height: 400px;
+        width: 84%;
+        margin-left: 8vw;
+
+    }
+    #texto4 {
+
+        background-color: rgba(27, 26, 26, 0.88);
+        font-size: 1.8vh;
+        font-weight: bold;
+        color: var(--cor00);
+
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        padding: 0px 5px;
+    }
+    #texto5, #texto6 {
+        text-indent: 1.5em;
+        background-color: rgba(27, 26, 26, 0.88);
+        font-size: 1.8vh;
+        color: var(--cor00);
+
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        padding: 0px 5px;
+        text-align: justify;
+    }
+    #texto7 {
+
+        background-color: rgba(27, 26, 26, 0.88);
+        font-size: 1.8vh;
+        color: var(--cor00);
+
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        padding: 0px 5px;
+        text-align: center;
+    }
+    div.teste {
+        max-width: 900px;
+        min-width: 320px;
+        max-height: 385px;
+        margin: auto;
+        text-align: center;
+    }
+    .mashroom3 {
+            width: 90%;
+            max-height: 360px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 13px var(--cor8);
+        }
+    .mashroom {
+        font-family: "Courier New";
+        font-weight: lighter;
+        position: absolute;
+        margin-left: 56px;
+        margin-top: 40px;
+        text-align: center;
+        color: var(--cor00);
+        padding: 5px;
+        background-color: var(--cor8);
+    }
+    .mashroom2 {
+        font-family: "Courier New";
+        font-weight: lighter;
+        position: absolute;
+        margin-left: 56px;
+        margin-top: 80px;
+        text-align: center;
+        color: var(--cor00);
+        padding: 5px;
+        background-color: var(--cor8);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h3 id="head">Digressões Filosóficas</h3>
+        <a href="https://www.instagram.com/ggustavo3/" target="_blank" rel="external"><img id="icon-insta" src="{% static 'img/icone-intagram.jpg' %}" alt="Ícone do Instagram" align="right"></a>
+    </header>
+    <abbr title="Noite Estrelada - Vincent
+    Van Gogh (1889)">
+    <main>
+        <div class="block"><label id="texto1">Digressões Filosóficas,<br>
+        um site de filosofia com conteúdos<br>
+        independentes e autorais.</label></div>
+
+        <div id="nietzsche">
+            <label id="texto4">"O maior dos pesos</label>
+            <label id="texto5">– E se um dia, ou uma noite, um demônio lhe aparecesse furtivamente em sua mais desolada solidão e dissesse: 'Esta vida, como você a está vivendo e já viveu, você terá de viver mais uma vez e por incontáveis vezes; e nada haverá de novo nela, mas cada dor e cada prazer e cada suspiro e pensamento, e tudo o que é inefavelmente grande e pequeno em sua vida, terão de lhe suceder novamente, tudo na mesma sequência e ordem  – e assim também essa aranha e esse luar entre as árvores, e também esse instante e eu mesmo. A perene ampulheta do existir será sempre virada novamente – e você com ela, partícula de poeira!'.</label>
+            <label id="texto6">Você não se prostraria e rangeria os dentes e amaldiçoaria o demônio que assim falou? Ou você já experimentou um instante imenso, no qual lhe responderia: 'Você é um deus e jamais ouvi coisa tão divina!'. Se esse pensamento tomasse conta de você, tal como você é, ele o transformaria e o esmagaria talvez; a questão em tudo e em cada coisa, 'Você quer isso mais uma vez e por incontáveis vezes?' pesaria sobre os seus atos como o maior dos pesos! Ou o quanto você teria de estar bem consigo mesmo e com a vida, para não desejar nada além dessa última, eterna confirmação e chancela?".</label>
+            <label id="texto7">- Friedrich Nietzsche, Gaia Ciência, aforismo 341.</label>
+        </div>
+    </main></abbr>
+    <a class="sem-linha" href="#novo"><div id="novo">Últimos textos
+    <img src="{% static 'img/seta-baixo.png' %}" alt="Seta para Baixo">
+    </div></a>
+    <div class="teste">
+        <a href="">
+            <h3 class="mashroom">SOBRE A NULIDADE</h3>
+            <h3 class="mashroom2">DA EXISTÊNCIA</h3>
+        </a>
+        <abbr title="Imagem de uma nebulosa capturada pelo Telescópio Espacial James Webb"><a href="https://digressoes-filosoficas.herokuapp.com/nulidadedaexistencia"><img class="mashroom3" src="{% static 'img/nebulosa_compactada.jpg' %}" alt="Imagem de uma nebulosa capturada pelo Telescópio Espacial James Webb"></a></abbr>
+    </div>
+    <div class="teste">
+        <a href="https://digressoesfilosoficas.herokuapp.com/evolucaocomopatologia">
+            <h3 class="mashroom">A EVOLUÇÃO COMO</h3>
+            <h3 class="mashroom2">UMA PATOLOGIA</h3>
+        </a>
+        <abbr title="Amanita muscaria"><a href="https://digressoes-filosoficas.herokuapp.com/evolucaocomopatologia"><img class="mashroom3" src="{% static 'img/mashroom.jpg' %}" alt="Amanita muscaria"></a></abbr>
+    </div>
+
+    <footer>
+        <h2>
+            Conteúdo integralmente desenvolvido por Gustavo Laperriere.
+        </h2>
+        <!--Adicionar data de publicação-->
+    </footer>
+    <!--Rolagem de links internos-->
+    <script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/links_internos.js' %}"></script>
+</body>
+</html>
