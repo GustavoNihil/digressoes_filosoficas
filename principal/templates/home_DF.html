@@ -64,11 +64,16 @@
         font-family: 'Times New Roman', Times, serif;
         display: inline-block;
         background-color: var(--cor8);
-        font-size: 3.8vh;
+        font-size: 3.1vh;
         margin-top: 2px;
         color: var(--cor00);
         font-variant: small-caps;
         letter-spacing: 2px;
+    }
+    @media(min-width: 400px) {
+        h3#head {
+        font-size: 3.8vh;
+    }
     }
 
     main {
@@ -126,7 +131,7 @@
     #texto4 {
 
         background-color: rgba(27, 26, 26, 0.88);
-        font-size: 1.8vh;
+        font-size: xx-small;
         font-weight: bold;
         color: var(--cor00);
 
@@ -137,7 +142,7 @@
     #texto5, #texto6 {
         text-indent: 1.5em;
         background-color: rgba(27, 26, 26, 0.88);
-        font-size: 1.8vh;
+        font-size: xx-small;
         color: var(--cor00);
 
         font-family: Arial, Helvetica, sans-serif;
@@ -148,13 +153,24 @@
     #texto7 {
 
         background-color: rgba(27, 26, 26, 0.88);
-        font-size: 1.8vh;
+        font-size: xx-small;
         color: var(--cor00);
 
         font-family: Arial, Helvetica, sans-serif;
         display: block;
         padding: 0px 5px;
         text-align: center;
+    }
+    @media(min-height: 500px) {
+        #texto4 {
+        font-size: 1.8vh;
+        }
+        #texto5, #texto6 {
+        font-size: 1.8vh;
+        }
+        #texto7 {
+        font-size: 1.8vh;
+        }
     }
     div.teste {
         max-width: 900px;
